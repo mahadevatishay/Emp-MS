@@ -32,13 +32,6 @@ public class RemoveEmp extends JFrame implements ActionListener{
             e.printStackTrace();
         }
         
-        JLabel labelaadhar=new JLabel("Aadhar Number");
-        labelaadhar.setBounds(50,100,100,30);
-        add(labelaadhar);
-        
-        JLabel lblaadhar=new JLabel();
-        lblaadhar.setBounds(200,100,100,30);
-        add(lblaadhar);
         
         JLabel labelphone=new JLabel("Phone Number");
         labelphone.setBounds(50,150,100,30);
@@ -55,6 +48,14 @@ public class RemoveEmp extends JFrame implements ActionListener{
         JLabel lblemail=new JLabel();
         lblemail.setBounds(200,200,100,30);
         add(lblemail);
+        
+        JLabel labelaadhar=new JLabel("Aadhar Number");
+        labelaadhar.setBounds(50,100,100,30);
+        add(labelaadhar);
+        
+        JLabel lblaadhar=new JLabel();
+        lblaadhar.setBounds(200,100,100,30);
+        add(lblaadhar);
         
         try{
             Conn c=new Conn();
@@ -96,11 +97,11 @@ public class RemoveEmp extends JFrame implements ActionListener{
         back.addActionListener(this);
         add(back);
         
-        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/5.jpg"));
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/4.jpg"));
         Image i2=i1.getImage().getScaledInstance(600, 500, Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel image=new JLabel(i3);
-        image.setBounds(350,0,600,500);
+        image.setBounds(450,30,500,400);
         add(image);
         
         setSize(1050,500);

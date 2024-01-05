@@ -17,11 +17,11 @@ public class ViewEmp extends JFrame implements ActionListener{
         setLayout(null);
         
         JLabel searchlbl = new JLabel("Search by Employee ID");
-        searchlbl.setBounds(20,20,150,20);
+        searchlbl.setBounds(20,20,170,20);
         add(searchlbl);
         
         cemployeeid=new Choice();
-        cemployeeid.setBounds(180, 20, 150, 20);
+        cemployeeid.setBounds(200, 20, 150, 20);
         add(cemployeeid);
         
         try{
@@ -44,26 +44,26 @@ public class ViewEmp extends JFrame implements ActionListener{
             e.printStackTrace();
         }
         JScrollPane jsp=new JScrollPane(table);
-        jsp.setBounds(0, 100, 900, 600);
+        jsp.setBounds(0, 100, 1040, 600);
         add(jsp);
         
         search=new JButton("Search");
-        search.setBounds(20,70,80,20);
+        search.setBounds(20,70,100,20);
         search.addActionListener(this);
         add(search);
         
         print=new JButton("Print");
-        print.setBounds(120,70,80,20);
+        print.setBounds(140,70,100,20);
         print.addActionListener(this);
         add(print);
         
         update=new JButton("Update");
-        update.setBounds(220,70,80,20);
+        update.setBounds(260,70,100,20);
         update.addActionListener(this);
         add(update);
         
         back=new JButton("Back");
-        back.setBounds(320,70,80,20);
+        back.setBounds(380,70,100,20);
         back.addActionListener(this);
         add(back);
         
